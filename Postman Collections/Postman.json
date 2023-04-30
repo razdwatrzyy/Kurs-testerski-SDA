@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "e71bb6b9-ad5b-47c1-9747-7554eabe796c",
+		"name": "Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createNewBoard",
+			"_postman_id": "753fe994-e506-47b6-a089-04bf67d8caaf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Pierwsza Tablica&key=1aa19f87f37fe4005a8e86ddc4e1b3a7&token=ATTAee9432c78341ef2d576ab833b398bb81dbd618f7986dfc79f3f5f601027c773d53F2BE6A",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Pierwsza Tablica"
+						},
+						{
+							"key": "key",
+							"value": "1aa19f87f37fe4005a8e86ddc4e1b3a7"
+						},
+						{
+							"key": "token",
+							"value": "ATTAee9432c78341ef2d576ab833b398bb81dbd618f7986dfc79f3f5f601027c773d53F2BE6A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewListTesting",
+			"_postman_id": "b5905064-6dec-4b92-92c4-afb108519666",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=Testing&idBoard=644e37f85891291e07a4b53c&key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Testing"
+						},
+						{
+							"key": "idBoard",
+							"value": "644e37f85891291e07a4b53c"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewCard",
+			"_postman_id": "c8e80997-a32e-4fb6-859a-ae7dfa4942f1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=644e3afa315eacc21d134468&key=1aa19f87f37fe4005a8e86ddc4e1b3a7&token=ATTAee9432c78341ef2d576ab833b398bb81dbd618f7986dfc79f3f5f601027c773d53F2BE6A&name=testowa karta&desc=pierwsze description",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "644e3afa315eacc21d134468"
+						},
+						{
+							"key": "key",
+							"value": "1aa19f87f37fe4005a8e86ddc4e1b3a7"
+						},
+						{
+							"key": "token",
+							"value": "ATTAee9432c78341ef2d576ab833b398bb81dbd618f7986dfc79f3f5f601027c773d53F2BE6A"
+						},
+						{
+							"key": "name",
+							"value": "testowa karta",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "pierwsze description",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createSecondList",
+			"_postman_id": "84efbaf8-a099-4adf-b71d-0b16663c9065",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=644e3afa315eacc21d134468&key={{key}}&token={{token}}&name=druga kartka testowa&desc=jakas tresc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "644e3afa315eacc21d134468"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "druga kartka testowa",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "jakas tresc",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBoard",
+			"_postman_id": "28d32c44-36ca-40fe-bde2-43f4a204d619",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/644e37f85891291e07a4b53c?key={{key}}&token={{token}}&desc=nowa wartosc",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"644e37f85891291e07a4b53c"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "desc",
+							"value": "nowa wartosc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createChecklistInCard",
+			"_postman_id": "c26062c7-440d-458a-bc1d-45201b4c70e2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists?idCard=644e3b7a4f33e54722101081&key={{key}}&token={{token}}&name=Lista kontrolna",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "idCard",
+							"value": "644e3b7a4f33e54722101081"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "Lista kontrolna",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewListToDo",
+			"_postman_id": "888fb71a-d620-4544-9347-2b8c96703726",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=To Do&idBoard=644e37f85891291e07a4b53c&key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "To Do"
+						},
+						{
+							"key": "idBoard",
+							"value": "644e37f85891291e07a4b53c"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewOrganization",
+			"_postman_id": "4c955873-fb4a-4f67-94b7-573d9d8e9712",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/organizations?displayName=Projekt SDA&key={{key}}&token={{token}}&desc=Pierwszy projekt testerski dla SDA&name=Projekt testerski",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"organizations"
+					],
+					"query": [
+						{
+							"key": "displayName",
+							"value": "Projekt SDA"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "desc",
+							"value": "Pierwszy projekt testerski dla SDA",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Projekt testerski",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewBoardInNewOrganization",
+			"_postman_id": "e4ccd31d-7bd8-492b-95d7-ae641fd14ded",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Tablica SDA&key={{key}}&token={{token}}&idOrganization=644e5ad74984abdf52f8fc3f",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tablica SDA"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idOrganization",
+							"value": "644e5ad74984abdf52f8fc3f",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
