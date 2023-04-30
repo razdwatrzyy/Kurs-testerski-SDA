@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "createNewBoard",
-			"_postman_id": "753fe994-e506-47b6-a089-04bf67d8caaf",
+			"id": "753fe994-e506-47b6-a089-04bf67d8caaf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -47,7 +47,7 @@
 		},
 		{
 			"name": "createNewListTesting",
-			"_postman_id": "b5905064-6dec-4b92-92c4-afb108519666",
+			"id": "b5905064-6dec-4b92-92c4-afb108519666",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -90,7 +90,7 @@
 		},
 		{
 			"name": "createNewCard",
-			"_postman_id": "c8e80997-a32e-4fb6-859a-ae7dfa4942f1",
+			"id": "c8e80997-a32e-4fb6-859a-ae7dfa4942f1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -139,7 +139,7 @@
 		},
 		{
 			"name": "createSecondList",
-			"_postman_id": "84efbaf8-a099-4adf-b71d-0b16663c9065",
+			"id": "84efbaf8-a099-4adf-b71d-0b16663c9065",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -188,7 +188,7 @@
 		},
 		{
 			"name": "updateBoard",
-			"_postman_id": "28d32c44-36ca-40fe-bde2-43f4a204d619",
+			"id": "28d32c44-36ca-40fe-bde2-43f4a204d619",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -228,7 +228,7 @@
 		},
 		{
 			"name": "createChecklistInCard",
-			"_postman_id": "c26062c7-440d-458a-bc1d-45201b4c70e2",
+			"id": "c26062c7-440d-458a-bc1d-45201b4c70e2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -272,7 +272,7 @@
 		},
 		{
 			"name": "createNewListToDo",
-			"_postman_id": "888fb71a-d620-4544-9347-2b8c96703726",
+			"id": "888fb71a-d620-4544-9347-2b8c96703726",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -315,7 +315,7 @@
 		},
 		{
 			"name": "createNewOrganization",
-			"_postman_id": "4c955873-fb4a-4f67-94b7-573d9d8e9712",
+			"id": "4c955873-fb4a-4f67-94b7-573d9d8e9712",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -364,7 +364,7 @@
 		},
 		{
 			"name": "createNewBoardInNewOrganization",
-			"_postman_id": "e4ccd31d-7bd8-492b-95d7-ae641fd14ded",
+			"id": "e4ccd31d-7bd8-492b-95d7-ae641fd14ded",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -404,6 +404,18 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "eae11c2f-b550-4c82-afea-4f99d741da0a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
