@@ -408,7 +408,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "https://api.trello.com/1/boards/?name=Tablica SDA&key={{key}}&token={{token}}&idOrganization=644e5ad74984abdf52f8fc3f",
 			"id": "eae11c2f-b550-4c82-afea-4f99d741da0a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
